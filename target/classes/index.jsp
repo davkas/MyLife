@@ -11,6 +11,6 @@
 <script>$(document).ready(function(){$(".vertical-nav").verticalnav({speed: 400,align: "left"});});</script>
 </head>
 <body>
-<jsp:include page="jsp/menu.jsp"></jsp:include>
+	<jsp:include page="page/menu.jsp"></jsp:include>
 </body>
 </html>

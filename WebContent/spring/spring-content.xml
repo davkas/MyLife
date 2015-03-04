@@ -13,7 +13,9 @@
     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
 	http://www.springframework.org/schema/tx 
 	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	
 	<context:component-scan base-package="com.davka.mylife" />
+	
 	<jpa:repositories base-package="com.davka.mylife"></jpa:repositories>
 	<!-- 占位符 -->
 	<bean

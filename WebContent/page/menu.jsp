@@ -2,13 +2,13 @@
 <div class="kePublic">
 	<div class="content">
 		<ul class="vertical-nav dark red">
-			<li><a href=""><i class="icon-signin"></i>登录</a></li>
+			<li><a href="toAddUserPage/"><i class="icon-signin"></i>登录</a></li>
 			<li><a href=""><i class="icon-signout"></i>登 出</a></li>
 			<li><a href=""><i class="icon-cogs"></i>管理
 			<span class="submenu-icon"></span></a>
-				<ul >
-					<li><a href="http://down.admin5.com">基础信息</a></li>
-					<li><a href="http://down.admin5.com">用户管理</a></li>
+				<ul>
+					<li><a href="">基础信息</a></li>
+					<li><a href="">用户管理</a></li>
 				</ul>
 			</li>
 			<li class="active"><a href=""><i class="icon-home"></i>首页</a></li>

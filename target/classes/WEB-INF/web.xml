@@ -18,10 +18,15 @@
 		 <param-name>contextConfigLocation</param-name>
 		 <param-value>
 			classpath:spring/spring-content.xml
+			classpath:spring/dispatch-content.xml
 		 </param-value>
 	  </init-param>
 	  <load-on-startup>1</load-on-startup>
   </servlet>
+  <servlet-mapping>
+    <servlet-name>dispatcherServerlet</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping>
   <!-- 初始话界面 -->
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
