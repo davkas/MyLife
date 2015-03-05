@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+.kePublic{
+	width:150px;
+	float:left;
+} 
+#register{
+	float:left;
+	width:400px;
+	height:400px;
+	margin-left:300px;
+	margin-top:60px;
+	font-size:20px;
+	font-family: Segoe UI,Arial;
+	color:white;
+} 
+#register input{
+	height:25px;
+	width:200px;
+}
+#register  input[type="submit"]{
+	height:30px;
+	width:80px;
+	margin-left: 58px;
+	border-color:#333;
+	border-style:outset;
+}
+#register td{
+	padding-bottom: 5px;
+}

@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>  
-<div class="kePublic">
+<div class="kePublic" id="menu">
 	<div class="content">
 		<ul class="vertical-nav dark red">
-			<li><a href="toAddUserPage/"><i class="icon-signin"></i>登录</a></li>
+			<li><a href="register"><i class="icon-signin"></i>登录</a></li>
 			<li><a href=""><i class="icon-signout"></i>登 出</a></li>
 			<li><a href=""><i class="icon-cogs"></i>管理
 			<span class="submenu-icon"></span></a>
