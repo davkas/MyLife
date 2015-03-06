@@ -4,7 +4,7 @@
   <!-- 上下文配置变量 -->
   <context-param>
 	<param-name>contextConfigLocation</param-name> 
-	<param-value>classpath:spring/spring-content.xml</param-value> 
+	<param-value>classpath:spring/spring-content.xml,classpath:spring/spring-security.xml</param-value> 
   </context-param>
   <!-- 上下文环境变量监视器 -->
   <listener>
@@ -30,15 +30,4 @@
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
-	<!-- Log4j配置 -->
-	<context-param>
-		<param-name>log4jConfigLocation</param-name>
-	 	<param-value>
-	 		classpath:/log4j/log4j.properties
-	 	</param-value>
-	</context-param>
-	<!-- 加载log4j配置文件 -->
-	<listener>
-		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
-	</listener>
 </web-app>

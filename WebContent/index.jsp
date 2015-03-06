@@ -12,6 +12,9 @@
 <script>$(document).ready(function(){$(".vertical-nav").verticalnav({speed: 400,align: "left"});});</script>
 </head>
 <body>
-	<jsp:include page="page/menu.jsp"></jsp:include>
+	<%-- <jsp:include page="page/menu.jsp"></jsp:include> --%>
+	<script type="text/javascript">
+		location.href = "login";
+	</script>
 </body>
 </html>
