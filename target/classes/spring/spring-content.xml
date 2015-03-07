@@ -16,9 +16,17 @@
 	http://www.springframework.org/schema/mvc  
     http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 	
-	<context:component-scan base-package="com.davka.mylife" />
-	 <mvc:annotation-driven /> 
+	<context:component-scan base-package="com.davka.mylife" >
+		 <context:include-filter type="regex" expression="com.davka.mylife.*"/>
+	</context:component-scan>
 	<jpa:repositories base-package="com.davka.mylife.dao"></jpa:repositories>
+	<mvc:annotation-driven />    
+	
+	
+	<!-- 该 BeanPostProcessor 将自动对标注 @Autowired 的 Bean 进行注入 -->
+<!-- 	<bean
+		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" /> -->
+	
 	<!-- 占位符 -->
 	<bean
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -62,10 +70,6 @@
 			</props>
 		</property>
 	</bean>
-	
-	<!-- 该 BeanPostProcessor 将自动对标注 @Autowired 的 Bean 进行注入 -->
-	<bean
-		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
 	
 	<bean id="vendorAdaptor"
 		class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
